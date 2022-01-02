@@ -1,0 +1,18 @@
+name: InfinityCheck
+version: '${project.version}'
+main: fan.frozen.infinitycheck.InfinityCheck
+api-version: 1.18
+depend:
+  - Vault
+commands:
+  checkset:
+    description: 设置兑换码
+  checkexchange:
+    description: 使用兑换码
+  checkremove:
+    description: 移除兑换码
+permissions:
+  infinityCheck.permission.createChecks:
+    default: op
+  infinityCheck.permission.removeChecks:
+    default: op
